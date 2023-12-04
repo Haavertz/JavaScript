@@ -1,5 +1,7 @@
 // Mostrar meu nome e alguns outros dados
 
+console.log("-=-=-=-=-=-=-=-=-");
+
 console.log("Gleison Morais da SIlva");
 console.log("09/06/2006");
 console.log(2006);
@@ -18,4 +20,11 @@ console.log("(2006)")
 
 console.log("-=-=-=-=-=-=-=-=-");
 
-console.log("Gleison" + "Morais" + "da Silva")
+// Conctenando de maneira normal
+console.log("Gleison" + "Morais" + "da" + "Silva")
+
+console.log("-=-=-=-=-=-=-=-=-");
+
+console.log("Gleison " + "Morais " + "da " + "Silva")
+
+console.log("-=-=-=-=-=-=-=-=-");
