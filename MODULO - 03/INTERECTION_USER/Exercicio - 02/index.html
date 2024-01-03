@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testando Um ID </title>
+    <title>Testando Um ID</title>
 
     <style>
         body {
@@ -12,17 +12,26 @@
         }
     </style>
 </head>
-<body>      
+<body>
+    <!-- Um input com a ID "myId" para o usuário inserir algum texto -->
     <input id="myId" type="text"></input>
-    <button onclick="chama()"">Get Text</button>
+    
+    <!-- Um botão que, quando clicado, chama a função "chama()" -->
+    <button onclick="chama()">Get Text</button>
 </body>
 <script>
-    
+    // Função chamada quando o botão é clicado
     function chama() {
+        // Solicita ao usuário seu nome através de um prompt
         let name = window.prompt("What is your name?", "John Doe");
+        
+        // Se o usuário inserir um nome, utiliza o nome fornecido; caso contrário, define como "anonymous"
         name = name ? name : "anonymous";
 
-        let age = prompt("Hello " + name + " how old are you?");
+        // Solicita ao usuário sua idade através de outro prompt
+        let age = prompt("Hello " + name + ", how old are you?");
+        
+        // Exibe um alerta mostrando o nome e a idade fornecidos pelo usuário
         alert(name + " is " + age + " years old");
     }
 </script>
