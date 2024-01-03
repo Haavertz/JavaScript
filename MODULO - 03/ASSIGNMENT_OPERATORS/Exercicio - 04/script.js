@@ -1,33 +1,32 @@
-let nr = 0;
-let year = 1970;
-let name = "Alice";
-let empty = "";
+let nr = 0;         // Declaração e atribuição de uma variável nr com valor 0.
+let year = 1970;    // Declaração e atribuição de uma variável year com valor 1970.
+let name = "Alice"; // Declaração e atribuição de uma variável name com valor "Alice".
+let empty = "";     // Declaração e atribuição de uma variável empty com valor de uma string vazia.
 
-console.log(!nr); // -> true
-console.log(!year); // -> false
-console.log(!name); // -> false
-console.log(!empty); // -> true
+console.log(!nr);   // Verifica se nr é falso (zero) e imprime o resultado (true).
+console.log(!year); // Verifica se year é falso e imprime o resultado (false).
+console.log(!name); // Verifica se name é falso (vazio) e imprime o resultado (false).
+console.log(!empty);// Verifica se empty é falso (vazio) e imprime o resultado (true).
 
-console.log(!!nr); // -> false
-console.log(!!name); // -> true
+console.log(!!nr);  // Converte nr para booleano e imprime o resultado (false).
+console.log(!!name);// Converte name para booleano e imprime o resultado (true).
 
-console.log(true && 1991); // -> 1991
-console.log(false && 1991); // -> false
-console.log(2 && 5); // -> 5
-console.log(0 && 5); // -> 0
-console.log("Alice" && "Bob"); // -> Bob
-console.log("" && "Bob"); // -> empty string
+console.log(true && 1991);    // Retorna o segundo operando (1991) porque o primeiro é verdadeiro.
+console.log(false && 1991);   // Retorna false porque o primeiro operando é falso.
+console.log(2 && 5);          // Retorna o segundo operando (5) porque ambos são verdadeiros.
+console.log(0 && 5);          // Retorna 0 porque o primeiro operando é falso.
+console.log("Alice" && "Bob");// Retorna "Bob" porque ambos são verdadeiros.
+console.log("" && "Bob");     // Retorna uma string vazia porque o primeiro operando é falso.
 
-
-console.log(true || 1991); // -> true
-console.log(false || 1991); // -> 1991
-console.log(2 || 5); // -> 2
-console.log(0 || 5); // -> 5
-console.log("Alice" || "Bob"); // -> Alice
-console.log("" || "Bob"); // -> Bob
+console.log(true || 1991);    // Retorna true porque o primeiro operando é verdadeiro.
+console.log(false || 1991);   // Retorna o segundo operando (1991) porque o primeiro é falso.
+console.log(2 || 5);          // Retorna o primeiro operando (2) porque é verdadeiro.
+console.log(0 || 5);          // Retorna o segundo operando (5) porque o primeiro é falso.
+console.log("Alice" || "Bob");// Retorna "Alice" porque o primeiro operando é verdadeiro.
+console.log("" || "Bob");     // Retorna "Bob" porque o primeiro operando é falso.
 
 let x = 0;
 let y = 0;
-console.log(x++ && y++); // -> 0
-console.log(x); // -> 1
-console.log(y); // -> y == 0
+console.log(x++ && y++); // Retorna 0 porque o pós-incremento só ocorre após a verificação.
+console.log(x);           // Imprime 1, pois x foi incrementado.
+console.log(y);           // Imprime 0, pois y não foi incrementado.
