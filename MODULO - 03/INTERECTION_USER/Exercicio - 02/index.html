@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Um ID </title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>      
+    <input id="myId" type="text"></input>
+    <button onclick="chama()"">Get Text</button>
+</body>
+<script>
+    
+    function chama() {
+        let name = window.prompt("What is your name?", "John Doe");
+        name = name ? name : "anonymous";
+
+        let age = prompt("Hello " + name + " how old are you?");
+        alert(name + " is " + age + " years old");
+    }
+</script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Um ID </title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>      
+    <input id="myId" type="text"></input>
+    <button onclick="console.log(document.getElementById('myId').value)">Get Text</button>
+    <button onclick="chama()"">Get Text 2</button>
+    <button onclick="chama2()"">Get Text 3</button>
+</body>
+<script>
+    
+    function chama() {
+        let decision = window.confirm("Is it OK?");
+        console.log(decision);
+    }
+
+    function chama2() {
+        let remove = confirm("Remove all data?");
+        let message = remove ? "Deleting Data" : "Cancelled"
+
+        console.log(message);
+    }
+</script>
+</html>
